@@ -34,4 +34,5 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
         
       # run tests!
+      - run: npm install
       - run: npm run prod
