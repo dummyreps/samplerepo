@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::post('deploy', 'DeployController@deploy');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
