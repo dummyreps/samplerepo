@@ -43,10 +43,10 @@ jobs:
       # run tests!
       - run: npm install
       - run: 
-          name: Iinstall NodeJS Packages
+          name: Install NodeJS Packages
           command: npm install
 
-      - save_cacheL
+      - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
