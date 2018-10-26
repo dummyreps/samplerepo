@@ -43,9 +43,9 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
         
       # run tests!
-      - run: 
-          name: Install NodeJS Packages
-          command: npm install
+      # - run: 
+      #     name: Install NodeJS Packages
+      #     command: npm install
 
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
