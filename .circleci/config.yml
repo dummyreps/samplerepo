@@ -20,7 +20,9 @@ jobs:
 
       - run:
           name: Download NodeJS v6
-          command: curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
+          command: curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
+      - run : sudo apt-get install -y nodejs
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -41,7 +43,6 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
         
       # run tests!
-      - run: npm install
       - run: 
           name: Install NodeJS Packages
           command: npm install
