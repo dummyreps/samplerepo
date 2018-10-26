@@ -8,7 +8,6 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/php:7.1-browsers
-      - image: circleci/node:8.9.1
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
@@ -19,6 +18,9 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: Download NodeJS v6
+          command: curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -26,13 +28,29 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
+
+
       - run: composer install -n --prefer-dist
 
       - save_cache:
           paths:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
+
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
         
       # run tests!
       - run: npm install
-      - run: npm run prod
+      - run: 
+          name: Iinstall NodeJS Packages
+          command: npm install
+
+      - save_cacheL
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+
+      - run:
+          name: Compile Javascript & CSS for Browser Testing
+          command: npm run production
