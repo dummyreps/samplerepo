@@ -43,6 +43,11 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
         
       # run tests!
+      
+      - run:
+          name: Install Npm dependencies
+          command: npm install imagemin-pngquant@5.0.1 --save
+      - run: npm install pngquant-bin@3.1.1 --save
       - run: 
           name: Install NodeJS Packages
           command: npm install
