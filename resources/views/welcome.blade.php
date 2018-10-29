@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    sample 1
+                    sample 23
                 </div>
 
                 <div class="links">
