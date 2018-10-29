@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    boombayaa
+                    booasdasdasmbayaa
                 </div>
 
                 <div class="links">
