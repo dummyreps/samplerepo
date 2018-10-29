@@ -5,8 +5,8 @@
 
 # update source code
 # 
-npm run production
-# git pull origin master
+# npm run production
+git pull
 
 # update PHP dependencies
 # export COMPOSER_HOME='/tmp/composer'
