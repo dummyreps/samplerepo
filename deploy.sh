@@ -5,7 +5,7 @@
 
 # update source code
 # 
-npm run prod
+# npm run prod
 # git pull origin master
 
 # update PHP dependencies
