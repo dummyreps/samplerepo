@@ -1,4 +1,4 @@
-#!/bin/node
+
 
 # activate maintenance mode
 
