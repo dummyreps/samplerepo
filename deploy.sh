@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/bin/node
 
 # activate maintenance mode
 
 
 # update source code
-git pull
+git pull origin master
 
 # update PHP dependencies
 # export COMPOSER_HOME='/tmp/composer'
