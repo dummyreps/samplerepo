@@ -4,7 +4,7 @@
 
 
 # update source code
-git pull origin master
+git pull
 
 # update PHP dependencies
 # export COMPOSER_HOME='/tmp/composer'
@@ -14,7 +14,7 @@ git pull origin master
 	# --prefer-dist		Forces installation from package dist even for dev versions.
 
 # update database
-php artisan migrate --force
+# php artisan migrate --force
 	# --force		Required to run when in production.
 
 # stop maintenance mode
