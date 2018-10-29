@@ -1,4 +1,4 @@
-
+#!/bin/sh
 
 # activate maintenance mode
 
