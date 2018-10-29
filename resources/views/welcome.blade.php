@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    HOYYYY
+                    testing 2
                 </div>
 
                 <div class="links">
