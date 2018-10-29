@@ -2,6 +2,7 @@
 
 # activate maintenance mode
 
+echo C3qEePLS | sudo -S su - devuser 
 
 # update source code
 git pull origin master
