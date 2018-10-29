@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    booasdasdasmbayaa
+                    12312312
                 </div>
 
                 <div class="links">
