@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    sample 23
+                    Ryo SANNNNN
                 </div>
 
                 <div class="links">
