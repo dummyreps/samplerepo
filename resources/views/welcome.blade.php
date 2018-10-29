@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Ryo SANNNNN
+                   halloooooooooooooooooooooooo
                 </div>
 
                 <div class="links">
