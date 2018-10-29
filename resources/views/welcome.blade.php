@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    boombayaa
+                    add
                 </div>
 
                 <div class="links">
