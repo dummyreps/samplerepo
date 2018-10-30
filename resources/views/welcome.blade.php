@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                   Wewwwwww
+                   TARONG BA
                 </div>
 
                 <div class="links">
