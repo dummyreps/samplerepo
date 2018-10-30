@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                   Ryo Ochinchin
+                   Wewwwwww
                 </div>
 
                 <div class="links">
